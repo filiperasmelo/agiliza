@@ -12,7 +12,6 @@ $scope.carregar = function (){
 	Conexao.getConexao(valores, ConfigUrl.BaseUrl).success(function(data){
 		console.log(data);
 			$scope.lista = data;
-			$ionicLoading.hide();
 		}).error(function(data){
 		});
 
@@ -79,7 +78,6 @@ function ($scope, $stateParams) {
 .controller('fretesCtrl', function ($scope, $http, $ionicModal, $timeout, Conexao, ConfigUrl) {
 
 $scope.atualizar = function(){
-	$scope.carregar()
     $http.get('#/app/fretes')
 }
 
