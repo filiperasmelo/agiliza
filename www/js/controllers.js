@@ -17,9 +17,6 @@ $scope.carregar = function (){
 
 }
 
-$scope.carregar();
-
-
 $scope.dados = function(valor){
 	$scope.nome2 = $scope.lista[valor].nome;
 	$scope.telefone2 = $scope.lista[valor].telefone;
@@ -35,7 +32,7 @@ $scope.dados = function(valor){
 }
 
 $scope.deletar = function(valor){
-	result = window.confirm("Apagar Registro: "+$scope.nome2);
+	result = window.confirm("Apagar Registro: "+ $scope.nome2);
 	if(result==1){
 
 		var valores = {
@@ -78,7 +75,7 @@ function ($scope, $stateParams) {
 .controller('fretesCtrl', function ($scope, $http, $ionicModal, $timeout, Conexao, ConfigUrl) {
 
 $scope.atualizar = function(){
-    $http.get('#/app/fretes')
+	$scope.carregar()
 }
 
 $scope.atualizar();
@@ -177,7 +174,7 @@ $scope.cadastrar = function (nome, telefone, email, origem, ufOrigem, destino, u
  
   $scope.doRefresh = function() {
     $scope.carregar()
-    $http.get('#/app/frete')
+    $http.get('#/app/fretes')
      .finally(function() {
        // Stop the ion-refresher from spinning
        $scope.$broadcast('scroll.refreshComplete');
