@@ -1,0 +1,44 @@
+<ion-view title="Cadastrar Frete" id="page6">
+  <ion-content padding="true" class="has-header" ng-controller="fretesCtrl">
+
+  <div class="list">
+
+  <label class="listar-item item item-input">
+    <input type="text" placeholder="Nome" ng-model="nome">
+  </label>
+
+  <label class="listar-item item item-input">
+    <input type="number" placeholder="Telefone" ng-model="telefone">
+  </label>
+
+  <label class="listar-item item item-input">
+    <input type="email" placeholder="Email" ng-model="email">
+  </label>
+
+  <label class="listar-item item item-input">
+    <input type="text" placeholder="Origem" ng-model="origem">
+    <input type="text" placeholder="UF" ng-model="ufOrigem">
+  </label>
+
+  <label class="listar-item item item-input">
+    <input type="text" placeholder="Destino" ng-model="destino">
+    <input type="text" placeholder="UF" ng-model="ufDestino">
+  </label>
+
+  <label class="listar-item item item-input">
+    <input type="number" placeholder="Frete Empresa" ng-model="freteEmpresa">
+    <input type="number" placeholder="Frete Motorista" ng-model="freteMotorista">
+  </label>
+
+   <label class="listar-item item item-input">
+    <input type="text" placeholder="Roteiro" ng-model="roteiro">
+  </label>
+  
+	<button class="button button-block button-positive" ng-click="cadastrar(nome, telefone, email, origem, ufOrigem, destino, ufDestino, freteEmpresa, freteMotorista, roteiro)">
+  		Incluir Frete
+	</button>
+
+</div>
+    
+  </ion-content>
+</ion-view>

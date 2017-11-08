@@ -1,0 +1,20 @@
+<ion-view title="Detalhes do Frete">
+	<ion-content padding="true" class="has-header">
+			<ion-item class="listar-item item-lista">
+				<h2>{{nome2}}</h2><br>
+				<h4>Telefone:</h4><p>{{telefone2}}</p>
+				<h4>EMAIL:</h4><p class="email">{{email2}}</p>
+				<h4>Origem:</h4><p>{{origem2}} - {{ufOrigem2}}</p>
+				<h4>Destino:</h4><p>{{destino2}} - {{ufDestino2}}</p>
+				<h4>Frete empresa:</h4><p>R$ {{freteEmpresa2}}</p>
+				<h4>Frete motorista:</h4><p>R$ {{freteMotorista2}}</p>
+			</ion-item>
+			<div>
+				<h5 class="roteiro">Roteiro:</h5>
+    			<p class="info-roteiro">{{roteiro2}}</p>
+      		</div>
+		<button class="button button-block button-positive" ui-sref="menu.cadastraMotorista()">
+  			Cadastrar Motorista
+		</button>
+	</ion-content>
+</ion-view>

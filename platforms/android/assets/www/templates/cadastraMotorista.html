@@ -1,0 +1,52 @@
+<ion-view title="Cadastro de Motorista">
+  <ion-content padding="true" class="has-header">
+
+  <div class="list">
+
+  <label class="listar-item item item-input">
+    <input type="text" placeholder="Nome" ng-model="nome">
+  </label>
+
+  <label class="listar-item item item-input">
+    <input type="number" placeholder="Telefone" ng-model="telefone">
+  </label>
+
+  <label class="listar-item item item-input">
+    <input type="text" placeholder="Logradouro" ng-model="logradouro">
+    <input type="number" placeholder="Número" ng-model="numLogradouro">
+  </label>
+
+  <label class="listar-item item item-input">
+    <input type="text" placeholder="Cidade" ng-model="cidade">
+    <input type="text" placeholder="Estado" ng-model="estado">
+  </label>
+
+  <label class="listar-item item item-input">
+    <input type="number" placeholder="CEP" ng-model="cep">
+  </label>
+
+  <label class="listar-item item item-input">
+    <input type="text" placeholder="Referencia Pessoal" ng-model="refPessoal">
+    <input type="number" placeholder="Telefone" ng-model="telRefPessoal">
+  </label>
+
+  <label class="listar-item item item-input">
+    <input type="text" placeholder="Referencia Comercial" ng-model="refComercial">
+    <input type="number" placeholder="Telefone" ng-model="telRefComercial">
+  </label>
+
+  </div>
+
+  <div>
+    <p class="info">Atenção:<br>Clique no botão abaixo e insira fotos dos documentos OBRIGATÓRIOS para finalizar o cadastro:
+      CRLV do cavalo e carreta(s), carteira de habilitação (frente e verso) e ANTT.</p>
+
+	  <div class="button-bar">
+      <a class="button button-positive icon ion-ios-camera"><h6 class="text-button">Tirar Fotos</h6></a>
+      <a class="button button-positive icon ion-android-send"><h6 class="text-button">Enviar Cadastro</h6></a>
+
+    </div>
+  </div>
+    
+  </ion-content>
+</ion-view>

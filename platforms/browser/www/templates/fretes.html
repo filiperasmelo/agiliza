@@ -1,0 +1,22 @@
+<ion-view cache-view="false" title="Fretes">
+  <ion-content padding="true" class="has-header" ng-controller="refresh">
+
+<ion-refresher
+    pulling-text="Atualizando..."
+    on-refresh="doRefresh()">
+  </ion-refresher>
+
+    <ion-list>
+      <ion-item ng-repeat="frete in lista" ng-click="dados($index)" ui-sref="menu.frete()" class="listar-item item-lista item-icon-right">
+      	{{frete.nome}}
+      	<br>
+      	<h4>Origem: {{frete.origem}} - {{frete.ufOrigem}}<br>Destino: {{frete.destino}} - {{frete.ufDestino}}</h4>
+      	<i class="icon ion-arrow-swap"></i>
+      	<ion-option-button class="button-assertive" ng-click="deletar(id2)">apagar Registro</ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+<a ui-sref="menu.cadastraFrete()" class="add button ion-android-add"></a>
+
+</ion-view>
