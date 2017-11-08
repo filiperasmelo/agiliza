@@ -8,7 +8,7 @@
 		<name>Agiliza		</name>
 		<description>PROJETO APP AGILIZA		</description>
 		<author href="http://mundividya.com.br" email="suporte@mundividya.com.br">Mundi Vidya Team		</author>
-		<content src="www/index.html" />
+		<content src="index.html" />
 		<feature name="http://api.phonegap.com/1.0/battery" />
 		<feature name="http://api.phonegap.com/1.0/camera" />
 		<feature name="http://api.phonegap.com/1.0/contacts" />
