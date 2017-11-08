@@ -1,15 +1,45 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="br.com.simetransportes.contatos" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>PluginContatos</name>
+    <name>Agiliza</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Aplicativo desenvolvido para Agilizar o processo de uma empresa de transportes e agenciamento de cargas.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="suporte@simetransportes.com.br" href="http://simetransportes.com.br">
+        SIME TRANSPORTES TEAM
     </author>
     <content src="index.html" />
-    <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="14" />
+    <preference name="phonegap-version" value="cli-6.3.0" />
+		<preference name="android-build-tool" value="gradle" />
+		<preference name="orientation" value="portrait" />
+		<preference name="fullscreen" value="true" />
+		<preference name="target-device" value="universal" />
+		<preference name="webviewbounce" value="true" />
+		<preference name="prerendered-icon" value="false" />
+		<preference name="stay-in-webview" value="true" />
+		<preference name="ios-statusbarstyle" value="default" />
+		<preference name="detect-data-types" value="true" />
+		<preference name="exit-on-suspend" value="true" />
+		<preference name="show-splash-screen-spinner" value="true" />
+		<preference name="auto-hide-splash-screen" value="true" />
+		<preference name="FadeSplashScreen " value="true" />
+		<preference name="EnableViewportScale" value="false" />
+		<preference name="MediaPlaybackRequiresUserAction" value="false" />
+		<preference name="AllowInlineMediaPlayback" value="true" />
+		<preference name="BackupWebStorage" value="none" />
+		<preference name="TopActivityIndicator" value="white" />
+		<preference name="KeyboardDisplayRequiresUserAction" value="true" />
+		<preference name="KeyboardShrinksView " value="true" />
+		<preference name="HideKeyboardFormAccessoryBar" value="true" />
+		<preference name="SuppressesIncrementalRendering" value="false" />
+		<preference name="windows-identity-name" value="" />
+		<preference name="android-minSdkVersion" value="14" />
+		<preference name="android-installLocation" value="auto" />
+		<preference name="SplashScreenDelay" value="2000" />
+		<preference name="ErrorUrl" value="null" />
+		<preference name="BackgroundColor" value="0x000000" />
+		<preference name="DisallowOverscroll" value="true" />
+		<preference name="LoadingDialog" value="," />
+		<preference name="LoadUrlTimeoutValue" value="null" />
     <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" />
     <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1" />
     <plugin name="cordova-plugin-media-capture" source="npm" spec="~1.2.0" />
