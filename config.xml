@@ -5,7 +5,7 @@
         Aplicativo desenvolvido para Agilizar o processo de uma empresa de transportes e agenciamento de cargas.
     </description>
     <author email="suporte@simetransportes.com.br" href="http://simetransportes.com.br">
-        SIME TRANSPORTES TEAM
+        SIME TRANSPORTES TEA
     </author>
     <content src="index.html" />
     <preference name="phonegap-version" value="cli-6.3.0" />
