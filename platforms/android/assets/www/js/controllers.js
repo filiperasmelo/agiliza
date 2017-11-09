@@ -5,10 +5,6 @@ $scope.lista = [];
 
 $scope.carregar = function (){
 
-	$ionicLoading.show({
-    	template: 'Carregando...'
-    });
-
 	var valores = {
 		parametros:'leitura'
 	}	
@@ -16,14 +12,10 @@ $scope.carregar = function (){
 	Conexao.getConexao(valores, ConfigUrl.BaseUrl).success(function(data){
 		console.log(data);
 			$scope.lista = data;
-			$ionicLoading.hide();
 		}).error(function(data){
 		});
 
 }
-
-$scope.carregar();
-
 
 $scope.dados = function(valor){
 	$scope.nome2 = $scope.lista[valor].nome;
@@ -40,7 +32,7 @@ $scope.dados = function(valor){
 }
 
 $scope.deletar = function(valor){
-	result = window.confirm("Apagar Registro: "+$scope.nome2);
+	result = window.confirm("Apagar Registro: "+ $scope.nome2);
 	if(result==1){
 
 		var valores = {
@@ -80,18 +72,19 @@ function ($scope, $stateParams) {
 }])
    
 
-.controller('fretesCtrl', function ($scope, $ionicModal, $timeout, Conexao, ConfigUrl) {
+.controller('fretesCtrl', function ($scope, $http, $ionicModal, $timeout, Conexao, ConfigUrl) {
 
+$scope.atualizar = function(){
+	$scope.carregar()
+}
 
+$scope.atualizar();
 
 })
 
 
 .controller('freteCtrl', function ($scope, $ionicModal, $timeout, Conexao, ConfigUrl) {
 
-$scope.reload = function(){
-	$state.reload();
-}
 
 })
 
@@ -148,16 +141,10 @@ $scope.cadastrar = function (nome, telefone, email, origem, ufOrigem, destino, u
 										alert('O campo Frete Motorista está vazio');
 									}else{
 
-								$ionicLoading.show({
-      								template: 'Carregando...'
-      							});
-
 								Conexao.getConexao(valores, ConfigUrl.BaseUrl).success(function(data){
 									console.log(data);
-
 									$scope.voltar();
-									$ionicLoading.hide();
-									$scope.reload();
+
 								}).error(function(data){
 
 								});
@@ -187,7 +174,7 @@ $scope.cadastrar = function (nome, telefone, email, origem, ufOrigem, destino, u
  
   $scope.doRefresh = function() {
     $scope.carregar()
-    $http.get('#/app/frete')
+    $http.get('#/app/fretes')
      .finally(function() {
        // Stop the ion-refresher from spinning
        $scope.$broadcast('scroll.refreshComplete');

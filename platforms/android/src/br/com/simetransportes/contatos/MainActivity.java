@@ -17,7 +17,7 @@
        under the License.
  */
 
-package com.phonegap.helloworld;
+package br.com.simetransportes.contatos;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
