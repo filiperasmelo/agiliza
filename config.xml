@@ -10,7 +10,7 @@
     <content src="index.html" />
     <preference name="phonegap-version" value="cli-6.3.0" />
 		<preference name="orientation" value="portrait" />
-		<preference name="fullscreen" value="true" />
+		<preference name="fullscreen" value="false" />
 		<preference name="exit-on-suspend" value="false" />
 		<preference name="show-splash-screen-spinner" value="true" />
 		<preference name="auto-hide-splash-screen" value="true" />
